@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .user-profile {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .user-icon {
+            font-size: 100px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <div class="container">
+        <div class="user-profile">
+            <div class="user-icon">
+                <span>&#128100;</span>
+            </div>
+            <h1><span id="fullName"></span></h1>
+            <p>Email: <span id="email"></span></p>
+            <p>Phone Number: <span id="phoneNumber"></span></p>
+            <a href="#" class="button">Edit Profile</a>
+        </div>
+    </div>
+
+    <script>
+        // Retrieve data from local storage and display it
+        document.getElementById('fullName').textContent = localStorage.getItem('fullname');
+        document.getElementById('email').textContent = localStorage.getItem('email');
+        document.getElementById('phoneNumber').textContent = localStorage.getItem('phoneNumber');
+    </script>
+    
+</body>
+</html>
