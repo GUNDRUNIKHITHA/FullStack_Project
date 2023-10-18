@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 0px;
+            margin: 0px;
+          }
+        .header ul {
+            list-style-type: none;
+            margin: 0; /* Remove the default margin */
+            padding: 0;
+            height: 60px;
+            overflow: hidden;
+            background-color:rgb(50, 150, 212);
+        }
+          
+        li.navright {
+            float: right;
+        }
+        
+        li.navleft{
+          float: left;
+
+        }
+        li.navleft button {
+          display: block;
+          background-color: rgb(50, 150, 212);
+          border: none;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+        
+      li.navleft button:hover {
+          color: #000;
+          text-decoration: none;
+      }
+      div.menu {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+      }
+      li.navright a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+      }
+          
+      li.navright a:hover {
+            color: #000;
+            text-decoration: none;
+            opacity: 0.25;
+      }
+      /*--------------------------------------------------------------
+        .dropbtn
+      --------------------------------------------------------------*/
+      .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: 61px;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        height: 753px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        width: 300px;
+        height: 43px;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        color: white;
+        background-color: rgb(50, 150, 212) ;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+      section{
+        text-align: center;
+      }
+      h1,h2{
+        margin-top: 30px;
+        color: #04304e;
+      }
+      fieldset{
+        border: none;
+      }
+      .icon{float: left;
+        margin-left:6px;
+        margin-right:14px;
+        margin-bottom:5px;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li class="navleft"> <button onclick="myFunction()" class="dropbtn"><div class="menu"></div>
+              <div class="menu"></div>
+              <div class="menu"></div> </button></li>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">profile</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <li class="navright"><a class="active" href="prad.html">Home</a></li>
+            <li class="navright"><a href="#contact">About Us</a></li>
+            <li class="navright"><a href="#contact">Medical Camps</a></li>
+            <li class="navright"><a href="doctordetails.html">Team</a></li>
+        </ul>
+    </div>
+    <section>
+        <h1>ABOUT US</h1>
+        <p>Scheduling automation you and your invitees will actually enjoy.</p>
+        <img src="https://www.booknmeet.com/img/bnm/booknmeet-india-thankyou-email-2018.png" alt="">
+    </section>
+    <fieldset>
+        <img src="https://www.booknmeet.com/images/BOOKNMEET-GOOGLE-AMP-DYNAMIC-EMAIL-01.svg" alt="" class="icon">
+        <h2>GOOGLE DYNAMIC EMAIL</h2>
+        <p style="width: 990px;">Increased Customer engagement is by targeted personalization through dynamic email communication with best efforts to personalize health tech enabling communication channel of BOOKNMEET for scheduling, feedback etc..
+            One of the key ingredients of omnichannel personalization is the adaptive content ( actions occurring within EMail Interface ), which facilitates personalized interactions across various modules to attract a customer and foster brand loyalty with a much deeper level of personalization.</p>
+    </fieldset> <br>
+    <fieldset>
+        <img src="https://www.booknmeet.com/img/bnm/BOOKNMEET-CLINIC-MOTHER-CHILD-01.svg" alt="" class="icon">
+        <h2>QUEUE MANAGEMENT MODULE</h2>
+        <p style="width: 990px;">Improve outpatient (OP) flow at Hospitals and clinics with QMM that enables facility to efficiently organize staff, resources and patient queues so that patients receive the right care at the right time in a comfortable, hassle-free environment. QMM has inbuilt facility to sent the SMS alerts to Patient on trigger like Queue Token generation, Prior schedule Reminder, indication that patient has been called for consultation etc.
+
+        </p>
+    </fieldset> <br>
+    <fieldset>
+        <img src="https://www.booknmeet.com/img/bnm/BOOKNMEET-FEEDBACK-01.svg" alt="" class="icon">
+        <h2>FEEDBACK</h2>
+        <p style="width: 990px;">Personalised feedback system for your practice. This tool help you to bring betterment to your practice and overall staff management and Improved patient servicing. The review is privately presented to consultant by notification after each review is submitted by patient post consultation.        </p>
+    </fieldset>
+    
+        <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+</body>
+</html>
