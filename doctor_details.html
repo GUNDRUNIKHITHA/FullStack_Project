@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header ul {
+            list-style-type: none;
+            margin: 0; /* Remove the default margin */
+            padding: 0;
+            height: 60px;
+            overflow: hidden;
+            background-color:rgb(50, 150, 212);
+        }
+          
+        li.navright {
+            float: right;
+        }
+        
+        li.navleft{
+          float: left;
+
+        }
+        li.navleft button {
+          display: block;
+          background-color: rgb(50, 150, 212);
+          border: none;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+        
+      li.navleft button:hover {
+          color: #000;
+          text-decoration: none;
+      }
+      div.menu {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+      }
+      li.navright a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+      }
+          
+      li.navright a:hover {
+            color: #000;
+            text-decoration: none;
+            opacity: 0.25;
+      }
+      /*--------------------------------------------------------------
+        .dropbtn
+      --------------------------------------------------------------*/
+      .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: 61px;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        height: 753px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        width: 300px;
+        height: 43px;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        color: white;
+        background-color: rgb(50, 150, 212) ;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .doctor-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+            margin-left: 50px;
+        }
+
+        .doctor-card h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .doctor-card p {
+            font-size: 16px;
+        }
+
+        .doctor-image {
+            max-width: 100%;
+            height:200px; 
+            width:439px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <ul>
+            <li class="navleft"> <button onclick="myFunction()" class="dropbtn"><div class="menu"></div>
+              <div class="menu"></div>
+              <div class="menu"></div> </button></li>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">profile</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <li class="navright"><a class="active" href="prad.html">Home</a></li>
+            <li class="navright"><a href="doctorabout.html">About Us</a></li>
+            <li class="navright"><a href="#contact">Medical Camps</a></li>
+            <li class="navright"><a href="doctordetails.html">Team</a></li>
+        </ul>
+    </div>
+
+
+    <h1>Doctors</h1>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://cms-assets.bajajfinserv.in/is/image/bajajfinance/top-4-networking-platforms-that-doctors-must-be-present-on?scl=1" alt="Dr. John Smith"> <br>
+        <h2>Dr. Flora</h2>
+        <p>Specialty: Cardiologist</p>
+        <p>Availability: Monday, Wednesday, Friday</p>
+    </div>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://img.freepik.com/premium-photo/portrait-happy-friendly-male-indian-latin-doctor-medical-worker-wearing-white-coat-with-stethoscope-around-neck-standing-modern-private-clinic-looking-camera-medical-healthcare-concept_255667-42298.jpg" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr. Sarah Johnson</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: Tuesday, Thursday</p>
+    </div>
+
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://www.internationalinsurance.com/wp-content/uploads/2021/04/Indian-doctor-at-desk-scaled.jpg" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr. John Smith</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: monday, Thursday</p>
+    </div>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://d39l2hkdp2esp1.cloudfront.net/img/photo/164767/164767_00_2x.jpg" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr. Angela</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: Tuesday, Friday,saturday</p>
+    </div>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://thumbs.dreamstime.com/b/portrait-indian-doctor-portrait-male-indian-doctor-serious-expression-crossed-arms-wearing-white-coat-having-open-137577527.jpg" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr. william</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: sunday, monday</p>
+    </div>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://media.istockphoto.com/id/1298800629/photo/portrait-of-confident-male-doctor-looking-at-camera.jpg?s=612x612&w=0&k=20&c=CB3h3a-0yUBgaZHhF2Kd5ibfDv25Qcjsca-ia5gIWUM=" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr. Alexander</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: Tuesday, Thursday</p>
+    </div>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://media.istockphoto.com/id/1341858342/photo/shot-of-a-mature-doctor-using-a-digital-tablet-in-his-office.jpg?s=612x612&w=0&k=20&c=RJ5QZ9jLr9Hk0UwmpZlOSlyvGnjUSEgJYCwVqhrQsOk=" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr. Benjamin</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: friday, Thursday</p>
+    </div>
+
+    <div class="doctor-card">
+        <img class="doctor-image" src="https://img.freepik.com/free-photo/woman-working-as-doctor_23-2148827827.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697155200&semt=ais" alt="Dr. Sarah Johnson"> <br>
+        <h2>Dr.Johnson</h2>
+        <p>Specialty: Pediatrician</p>
+        <p>Availability: Tuesday, Thursday</p>
+    </div>
+    <!-- Add more doctor cards as needed -->
+
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+</body>
+</html>
