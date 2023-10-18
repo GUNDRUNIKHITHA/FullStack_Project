@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            max-width: 100%;
+            height: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #272173;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 100px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .form-group {
+            margin-left: 170px;
+            display: inline-block;
+            width: 300px; /* Adjust the width as needed */
+            margin-right: 2%; /* Add some spacing between sections */
+        }
+
+        label {
+            margin-top: 25px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            margin-top: 65px;
+            width: 12%;
+            height: 40px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        .footer{
+            padding-top: 30px;
+            background-color: rgb(220, 242, 248);
+            height: 410px;
+            color: #272173;
+        }
+        img{
+            margin-left:230px ;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ONLINE DOCTOR APPOINTMENT</h1>
+        <center><p>Select Your destination through online</p></center>
+        <form action="public/Dapp.html">
+            <div class="form-group">
+                <label for="state">Select Your State:</label>
+                <select id="state">
+                    <option value="state">State </option>
+                    <option value="state2">Andhra Pradesh</option>
+                    <!-- Add more states here -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="district">Select Your District:</label>
+                <select id="district">
+                    <option value="district">District </option>
+                    <option value="Anantapur">Anantapur</option>
+                    <option value="Chittoor">Chittoor</option>
+                    <option value="East Godavari">East Godavari</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="Krishna">Krishna</option>
+                    <option value="Kurnool">Kurnool</option>
+                    <option value="Nellore">Nellore</option>
+                    <option value="Prakasam">Prakasam</option>
+                    <option value="Srikakulam">Srikakulam</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Vizianagaram">Vizianagaram</option>
+                    <option value="West Godavari">West Godavari</option>
+                    <option value="Y.S.R. Kadapa">Y.S.R. Kadapa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hospital">Select Your Hospital:</label>
+                <select id="hospital">
+                        <optgroup label="Srikakulam">
+                          <option value="hospital">Hospital </option>
+                          <option value="Narayana Multi Specialty Hospital">Narayana Multi Specialty Hospital</option>
+                          <option value="Meenakshi Hospital">Meenakshi Hospital</option>
+                          <option value="Suryamukhi Hospital">Suryamukhi Hospital</option>
+                          <option value="Jivanyog Nursing Home and Women's Hospital">Jivanyog Nursing Home and Women's Hospital</option>
+                          <option value="Gaurav Homeopathic Clinic">Gaurav Homeopathic Clinic</option>
+                          <option value="Hcg Mnr Curie Cancer Centre">Hcg Mnr Curie Cancer Centre</option>
+                          <option value="Kims Hospital">Kims Hospital</option>
+                        </optgrou>  
+                        
+                        <optgroup label="Anantapur">
+                            <option value="Dr. Akbar Eye Hospital Phaco Laser and Lasik Center">Dr. Akbar Eye Hospital Phaco Laser and Lasik Center</option>
+                            <option value="Mythri Hospital">Mythri Hospital</option>
+                            <option value="Sri Anand Hospital">Sri Anand Hospital</option>
+                            <option value="Rakshaa Multispeciality Hospital">Rakshaa Multispeciality Hospital</option>
+                            <option value="Harshitha Multi Speciality Hospital">Harshitha Multi Speciality Hospital</option>
+                            <option value="Mamatha Super Specialty Hospital">Mamatha Super Specialty Hospital</option>
+                            <option value="Sree Amaravathi Multispeciality Hospital">Sree Amaravathi Multispeciality Hospital</option>
+                            <option value="Cmn Hospital">Cmn Hospital</option>
+                          </optgroup>
+
+                          <optgroup label="Chittoor">
+                            <option value="AK's AMMA HOSPITAL">AK's AMMA HOSPITAL</option>
+                            <option value="Sushma's Multi Speciality Dental Clinic">Sushma's Multi Speciality Dental Clinic</option>
+                            <option value="Life Line Emergency Center">Life Line Emergency Center</option>
+                            <option value="Indira Hospital">Indira Hospital</option>
+                            <option value="Preetham Hospital">Preetham Hospital</option>
+                            <option value="Sasi Hospital">Sasi Hospital</option>
+                            <option value="Dr. K V Chakradhar's (JANVI MULTISPECIALITY AYURVEDIC HOSPITAL & RESEARCH CENTRE)">JANVI MULTISPECIALITY AYURVEDIC HOSPITAL</option>
+                            <option value="Jivanyog Nursing Home and Women's Hospital">Jivanyog Nursing Home and Women's Hospital</option>
+                          </optgroup>
+
+                          <optgroup label="Guntur">
+                            <option value="Amaravathi Institute Of Medical Sciences Pvt Ltd.">Amaravathi Institute Of Medical Sciences Pvt Ltd.</option>
+                            <option value="Bayya ENT Hospital & Research Centre.">Bayya ENT Hospital & Research Centre.</option>
+                            <option value="Bommidala Cancer Institute.">Bommidala Cancer Institute.</option>
+                            <option value="Hi-tech trauma & Critical Care Hospitals Ltd.">Hi-tech trauma & Critical Care Hospitals Ltd.</option>
+                            <option value="Hyma Hospitals.">Hyma Hospitals.</option>
+                            <option value="St. Joseph's General Hospital.">St. Joseph's General Hospital.</option>
+                            <option value="Sudarsani Eye Hospital.">Sudarsani Eye Hospital.</option>
+                            <option value="Guntur Rheumatology And Immunology Center.">Guntur Rheumatology And Immunology Center.</option>
+                          </optgroup>
+
+                          <optgroup label="West Godavari">
+                            <option value="Achanta Government Hospital">Achanta Government Hospital</option>
+                            <option value="Akividu Government Hospital">Akividu Government Hospital</option>
+                            <option value="Buttayagudem Government Hospital">Buttayagudem Government Hospital</option>
+                            <option value="Chagallu Government Hospital">Chagallu Government Hospital</option>
+                            <option value="Chebrolu New Government Hospital">Chebrolu New Government Hospital</option>
+                            <option value="Eluru Government Hospital">Eluru Government Hospital</option>
+                            <option value="Jangareddigudem Government Hospital">Jangareddigudem Government Hospital</option>
+                            <option value="Madhavaram Government Hospital">Madhavaram Government Hospital</option>
+                          </optgroup>
+                        
+                </select>
+            </div>
+            <div class="submit">
+            <center><button type="submit">Book Appointment</button></center>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <center>
+        <h2>ONLINE MOBILE APPOINTMENT SCHEDULING PLATFORM</h2>
+        <p>Online Appointment, Phone-in Appointment, Walk-in Appointment with Token</p>
+    </center> <br> <br>
+    
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1rI0GSDyjQLtDD3VOmY7mf6CXnQLNHKSR7_cBO17KbWPJNjJP" alt="" style="margin-left:20%;">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3TFYaJW1haE2_NWbYui7VOI4MblResOwrB_nLIYaZqFCALUoT" alt="">
+         <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6QDqLz1EJr1MoCDRUkq9TR9Afiu-FUl0qVTdfBHtB8hBMWF0v" alt="">
+    
+
+         <script>
+            // JavaScript to populate the hospital dropdown based on the selected district
+            document.getElementById('district').addEventListener('change', function () {
+                var selectedDistrict = this.value;
+                var hospitalDropdown = document.getElementById('hospital');
+                hospitalDropdown.innerHTML = ''; // Clear previous options
+        
+                if (selectedDistrict === 'Srikakulam') {
+                    // Populate the hospital dropdown for Srikakulam district
+                    var hospitals = [
+                        "hospital",
+                        "Narayana Multi Specialty Hospital",
+                        "Meenakshi Hospital",
+                        "Suryamukhi Hospital",
+                        "Jivanyog Nursing Home and Women's Hospital",
+                        "Gaurav Homeopathic Clinic",
+                        "Hcg Mnr Curie Cancer Centre",
+                        "Kims Hospital"
+                    ];
+                    hospitals.forEach(function (hospital) {
+                        var option = document.createElement('option');
+                        option.value = hospital;
+                        option.text = hospital;
+                        hospitalDropdown.appendChild(option);
+                    });
+                } else if (selectedDistrict === 'Anantapur') {
+                    // Populate the hospital dropdown for Anantapur district
+                    var hospitals = [
+                        "hospital",
+                        "Dr. Akbar Eye Hospital Phaco Laser and Lasik Center",
+                        "Mythri Hospital",
+                        "Sri Anand Hospital",
+                        "Rakshaa Multispeciality Hospital",
+                        "Harshitha Multi Speciality Hospital",
+                        "Mamatha Super Specialty Hospital",
+                        "Sree Amaravathi Multispeciality Hospital",
+                        "Cmn Hospital"
+                    ];
+                    hospitals.forEach(function (hospital) {
+                        var option = document.createElement('option');
+                        option.value = hospital;
+                        option.text = hospital;
+                        hospitalDropdown.appendChild(option);
+                    });
+                } else if (selectedDistrict === 'Chittoor') {
+                    // Populate the hospital dropdown for Chittoor district
+                    var hospitals = [
+                        "hospital",
+                        "AK's AMMA HOSPITAL",
+                        "Sushma's Multi Speciality Dental Clinic",
+                        "Life Line Emergency Center",
+                        "Indira Hospital",
+                        "Preetham Hospital",
+                        "Sasi Hospital",
+                        "JANVI MULTISPECIALITY AYURVEDIC HOSPITAL"
+                    ];
+                    hospitals.forEach(function (hospital) {
+                        var option = document.createElement('option');
+                        option.value = hospital;
+                        option.text = hospital;
+                        hospitalDropdown.appendChild(option);
+                    });
+                } else if (selectedDistrict === 'Guntur') {
+                    // Populate the hospital dropdown for Guntur district
+                    var hospitals = [
+                        "hospital",
+                        "Amaravathi Institute Of Medical Sciences Pvt Ltd.",
+                        "Bayya ENT Hospital & Research Centre",
+                        "Bommidala Cancer Institute",
+                        "Hi-tech trauma & Critical Care Hospitals Ltd.",
+                        "Hyma Hospitals",
+                        "St. Joseph's General Hospital",
+                        "Sudarsani Eye Hospital",
+                        "Guntur Rheumatology And Immunology Center"
+                    ];
+                    hospitals.forEach(function (hospital) {
+                        var option = document.createElement('option');
+                        option.value = hospital;
+                        option.text = hospital;
+                        hospitalDropdown.appendChild(option);
+                    });
+                } else if (selectedDistrict === 'West Godavari') {
+                    // Populate the hospital dropdown for West Godavari district
+                    var hospitals = [
+                        "hospital",
+                        "Achanta Government Hospital",
+                        "Akividu Government Hospital",
+                        "Buttayagudem Government Hospital",
+                        "Chagallu Government Hospital",
+                        "Chebrolu New Government Hospital",
+                        "Eluru Government Hospital",
+                        "Jangareddigudem Government Hospital",
+                        "Madhavaram Government Hospital"
+                    ];
+                    hospitals.forEach(function (hospital) {
+                        var option = document.createElement('option');
+                        option.value = hospital;
+                        option.text = hospital;
+                        hospitalDropdown.appendChild(option);
+                    });
+                }
+                // Add more conditions for other districts as needed
+            });
+        </script>
+        
+</body>
+</html>
