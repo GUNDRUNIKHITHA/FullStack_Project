@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            .sub{
+                width: 120px;
+                height: 41px;
+                color: white;
+            }
+            body{
+                text-align: center;
+                font-size: 25px;
+                background-image: url('doctor .png');
+                background-size: cover;
+                color: white;
+            }
+            h1{
+                text-decoration-color: blueviolet;
+                color: white;
+                padding-top: 1px;
+            }
+            div{
+                margin-top: 12%;
+                margin-left: 33%;
+                background-color: rgba(0, 0, 0, 0.7);
+                height: 495px;
+                width: 590px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+            input{
+                width: 280px;
+                height: 30px;
+                border-radius: 4px;
+                border: 1px solid black;
+            }
+            label{
+                padding-top: 6px;
+            }
+            .sub{
+                background-color: rgb(20, 101, 135);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>Login Form</h1>
+        <form method="GET" action="prad.html">
+            <label>Fullname :</label> <br>
+            <input type="text" name="Fullname" />
+            <br>
+            <label>Email id :</label> <br>
+            <input type="text" name="Email" />
+            <br>
+            <label>Password:</label> <br>
+            <input type="text" name="Password" /> <br>
+            <label>PhoneNumber:</label> <br>
+            <input type="number" name="phonenumber" /> <br> <br>
+            <button id="submitModal" class="sub" onclick="submitForm()">Submit</button>
+            <p>if your are not signedup plase <a href="doctorsignup.html">SIGNUP</a></p>
+        </form>
+    </div>
+    <script>
+        function submitForm() {
+            // Get form data
+            const fullname = document.querySelector('input[name="Fullname"]').value;
+            const email = document.querySelector('input[name="Email"]').value;
+            const phoneNumber = document.querySelector('input[name="phonenumber"]').value;
+
+            // Store form data in local storage for use in another HTML page
+            localStorage.setItem('fullname', fullname);
+            localStorage.setItem('email', email);
+            localStorage.setItem('phoneNumber', phoneNumber);
+
+            // Redirect to another HTML page for displaying the data
+            window.location.href = 'profiledoctor.html';
+        }
+
+    </script>
+</body>
+</html>
