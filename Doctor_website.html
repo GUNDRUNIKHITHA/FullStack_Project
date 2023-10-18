@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Consultation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin: 0px;
+            color: white;
+          }
+          /*--------------------------------------------------------------
+          # Navigation Menu
+          --------------------------------------------------------------*/
+        
+        .header ul {
+            list-style-type: none;
+            margin: 0; /* Remove the default margin */
+            padding: 0;
+            height: 60px;
+            overflow: hidden;
+            background-color:rgb(50, 150, 212);
+        }
+          
+        li.navright {
+            float: right;
+        }
+        
+        li.navleft{
+          float: left;
+
+        }
+        li.navleft button {
+          display: block;
+          background-color: rgb(50, 150, 212);
+          border: none;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+        
+      li.navleft button:hover {
+          color: #000;
+          text-decoration: none;
+      }
+      div.menu {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+      }
+      li.navright a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+      }
+          
+      li.navright a:hover {
+            color: #000;
+            text-decoration: none;
+            opacity: 0.25;
+      }
+      /*--------------------------------------------------------------
+        .dropbtn
+      --------------------------------------------------------------*/
+      .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: 61px;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        height: 703px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        width: 300px;
+        height: 60px;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        color: white;
+        background-color: rgb(50, 150, 212) ;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+      /*--------------------------------------------------------------
+          # Hero Section   #11dbcf
+      --------------------------------------------------------------*/
+      #hero {
+              width: 100%;
+              height: 80vh;
+              background: url("./images/hero.jpg") center center;
+              background-size: cover;
+              position: relative;
+      }
+            
+      #hero .container {
+              padding-top: 80px;
+      }
+            
+      #hero:before {
+              content: "";
+              background: rgba(0, 0, 0, 0.6);
+              background-image: url("https://www.tamer-group.com/wp-content/uploads/2018/08/Healthcare-Main-Banner.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              position: absolute;
+              height: 705px;
+              bottom: 0;
+              top: 0;
+              left: 0;
+              right: 0;
+      }
+            
+      #hero h1 {
+              margin: 0 0 10px 0;
+              font-size: 48px;
+              font-weight: 700;
+              line-height: 56px;
+              color: #fff;
+      }
+            
+            #hero h2 {
+              color: #eee;
+              margin-bottom: 40px;
+              font-size: 15px;
+              font-weight: 500;
+              font-family: "Open Sans", sans-serif;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+            }
+            
+            .main-btn {
+              font-family: "Poppins", sans-serif;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-size: 14px;
+              letter-spacing: 1px;
+              display: inline-block;
+              padding: 8px 28px;
+              border-radius: 50px;
+              transition: 0.5s;
+              margin: 10px;
+              border: 2px solid #fff;
+              color: #fff;
+            }
+            
+             .main-btn:hover {
+              background: rgb(50, 150, 212);
+              border: 2px solid rgb(50, 150, 212);
+              text-decoration: none;
+              color:#fff;
+            }
+
+            .footer {
+              text-align: center;
+              font-size: 0.9rem;
+              background:rgb(50, 150, 212);
+              height: 70px;
+            }
+          
+
+            .footer .text{
+              color:white;
+              padding-top: 0px;
+            }
+              
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- End Header -->
+
+    <div class="header">
+    <ul>
+        <li class="navleft"> <button onclick="myFunction()" class="dropbtn"><div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div> </button></li>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="profiledoctor.html">profile</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <li class="navright"><a class="active" href="#home">Home</a></li>
+        <li class="navright"><a href="doctorabout.html">About Us</a></li>
+        <li class="navright"><a href="#contact">Medical Camps</a></li>
+        <li class="navright"><a href="doctordetails.html">Team</a></li>
+    </ul>
+    </div>
+
+    <!-- End Header --> 
+     
+    <!--  Hero Section-->
+    <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1>24/7 Care is available</h1>
+      <h2>India's best online appointment scheduling platform.</h2>
+      <a href="doctorarea.html" class="main-btn">Get Started</a>
+    </div>
+  </section>
+  <!-- End Hero -->
+  
+
+  <!-- Footer-->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left" style="padding-top: 0px;">Copyright © our Website 2023</div>       
+            <div class="col-lg-4 text-lg-left" style="padding-top: 6px; padding-left:275px;">privacy policy</div>
+            <div class="col-lg-4 text-lg-left" style="padding-top: 6px; padding-left:275px;">Terms of use</div>
+    </div>
+  </footer>
+
+
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+  </body>
+</html>
